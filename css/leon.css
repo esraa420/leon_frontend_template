@@ -29,10 +29,7 @@ html{
     .special-heading + p{
        margin-top: -20px;
     }
-    .container{
-         padding-left: 15px;
-       padding-right: 15px;
-    }
+  
 }
 /* end component */
 *{
@@ -44,27 +41,27 @@ body{
      font-family: "Work Sans", sans-serif;
 }
 .container{
-        padding-left: 204px;
-        padding-right: 201px;
-        margin-right: auto;
-        margin-left: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-right: auto;
+    margin-left: auto;
 }
 /* Small screen */
-@media(main-width:768px){
+@media(min-width:768px){
     .container{
         width: 750px; 
     }
 }
 /* Medium screen */
-@media(main-width:992px){
+@media(min-width:992px){
     .container{
         width: 970px;
     }
 }
 /* Large screen */
-@media(main-width:1200px){
+@media(min-width:1200px){
     .container{
-        width: 1170px;
+        width: 1168px;
     }
 }
 /* start header  */
@@ -189,7 +186,7 @@ max-width: 100%;
 .features .container{
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* توزيع تلقائي للعناصر */
-        gap: 100px; /* مسافة بين العناصر */
+        gap: 93px; /* مسافة بين العناصر */
 }
 .features .feat{
 padding: 20px;
@@ -217,7 +214,7 @@ text-align: center;
 .services-content{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* توزيع تلقائي للعناصر */
-    gap: 100px; /* مسافة بين العناصر */
+    gap: 60px; /* مسافة بين العناصر */
     padding: 20px;
     margin-top: 100px;
  
@@ -360,23 +357,21 @@ left: 338px;
     color:#777 ;
     /* width: 497px; */
 }
-@media(max-width:991px){
+
+@media(max-width:991px) {
     .about .about-container {
         flex-direction: column;
         text-align: center;
     }
-}
-@media(max-width:991px) {
-.about-content .images::before, 
-.about-content .images::after {
-display: none;
-}
-@media(max-width:991px) {
-    .about-content .images{
-        margin: 0 auto 60px ;
-    } 
-}
-}
+    .about-content .images::before,
+    .about-content .images, 
+    .about-content .images::after {
+            display: none;
+    }
+    .about-content .text{
+        padding-left: 0px;
+    }
+    }
 /* end about */     
 /* start contact */
 .contact{
