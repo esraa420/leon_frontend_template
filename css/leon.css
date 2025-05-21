@@ -61,7 +61,7 @@ body{
 /* Large screen */
 @media(min-width:1200px){
     .container{
-        width: 1168px;
+        width: 1134px;
     }
 }
 /* start header  */
@@ -186,7 +186,7 @@ max-width: 100%;
 .features .container{
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* توزيع تلقائي للعناصر */
-        gap: 93px; /* مسافة بين العناصر */
+        gap: 90px; /* مسافة بين العناصر */
 }
 .features .feat{
 padding: 20px;
